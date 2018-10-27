@@ -124,5 +124,4 @@ def user_json():
             print "File "+ file + " already processed"
 
 
-
 user_json()
