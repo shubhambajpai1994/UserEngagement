@@ -3,7 +3,7 @@ import datetime
 
 def extract_zombie():
     # login_data_extract
-    print "Zombie Users"
+    print("Zombie Users")
     users_last_login = {}
     with open("./UserEngagement/dwh/loggedin.json") as json_data:
         x = json.load(json_data)
@@ -25,10 +25,10 @@ def extract_zombie():
                     users_last_login[users] = week_number
     current_week_number =  datetime.date.today().isocalendar()[1] + 52
 
-    print current_week_number
+    print(current_week_number)
     for users in users_last_login:
         #print users,users_last_login[users]
         if users_last_login[users] < current_week_number - 8:
-            print users, users_last_login[users]
+            print(users, users_last_login[users])
 
 extract_zombie()

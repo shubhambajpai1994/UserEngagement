@@ -1,5 +1,4 @@
 import numpy as np
-import matplotlib.pyplot as plt
 import os
 from matplotlib import style
 import csv
@@ -163,7 +162,7 @@ for j in range(15, 40):
                     csv_writer.writerow([user[i] + " General Disengaged" + " Above User Threshold"])
                     #print user[i] + " General Engaged" + " Below User Threshold"
                 else:
-                    csv_writer.writerow([user[i] + " GeneralDisengaged" + " Below User Threshold"])
+                    csv_writer.writerow([user[i] + " General Disengaged" + " Below User Threshold"])
                     #print user[i] + " General Engaged" + " Above User Threshold"
             #print user[i], "General Disengaged"
 
